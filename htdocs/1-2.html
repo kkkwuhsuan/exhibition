@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>活動</title>
+	<style type="text/css">
+		body{background-color:#a9d6a9;}
+		#a{
+			background-color:#94b8b8;
+			margin: 40px;
+			padding: 50px;
+			font-weight: bold;
+			font-size: 20px;
+			color: #293d3d;
+		}
+		#one{
+			background-color: #d6d6a9;
+			margin: 40px;
+			padding: 50px;
+			font-weight: bold;
+			font-size: 20px;
+			color: #e65c00;
+		}
+		#ab{color: #803300;
+			font-size: 30px;
+			text-align: center;
+			font-weight: bolder;
+
+		}
+		#two{
+			background-color: #d6d6a9;
+			margin: 40px;
+			padding: 50px;
+			font-weight: bold;
+			font-size: 20px;
+			color: #e65c00;
+		}
+	</style>
+</head>
+<body>
+	
+	<br>
+	<br>
+	<a href="1.html">首頁</a>   
+	     <a href="1-1.html">會員註冊</a>
+         <a href="1-3.html">網路訂票</a>
+         <a href="1-4.php">參館資訊</a>
+        
+<div id="a">
+<table border="1">
+	<tr>
+		<td>活動名稱</td>
+		<td>活動日期</td>
+		<td>活動類別</td>
+		<td>活動地點</td>
+	</tr>
+	<tr>
+		<td>糖蜜酒精健身工坊</td>
+		<td>2022/1/8、1/22、2/5</td>
+		<td>體驗活動</td>
+		<td>三樓「2021臺北美術獎」302展間</td>
+	</tr>
+	<tr>
+		<td>未竟之役：太空．家屋．現代主義 </td>
+		<td>2021/12/14~2022/2/20</td>
+		<td>團體預約導覽</td>
+		<td>二樓2A-2B</td>
+	</tr>
+	<tr>
+		<td>現代主義</td>
+		<td>2022/01/15-2022/02/20</td>
+		<td>團體預約導覽/親子導覽</td>
+		<td>二樓2A-2B</td>
+	</tr>
+	<tr>
+		<td>王大閎建築劇場</td>
+		<td>2022/01/04-2022/12/31</td>
+		<td>團體預約導覽</td>
+		<td>王大閎建築劇場</td>
+	</tr>
+	<br>
+</table>
+</div>
+<form action="1-2.php" method="get">
+	<h3 id="ab">預約</h3>
+    <div id="one">
+	團體名稱:<input type="text" name="groupname">
+	<br>
+	預定時間:<input  type="date" name="day" value="2022-01-08" min="2022-01-08" max="2022-12-31">
+	<br>
+	參加人數:
+    <select name="people">
+    	<option value="1">1</option>
+    	<option value="1">2</option>
+    	<option value="1">3</option>
+    	<option value="1">4</option>
+    	<option value="1">5</option>
+    	<option value="1">6</option>
+    	<option value="1">7</option>
+    	<option value="1">8</option>
+    	<option value="1">9</option>
+    	<option value="1">10</option>
+    </select>	
+	<br>
+	聯絡人姓名:<input type="text" name="contact">
+	<br>
+	行動電話:<input type="text" name="phone">
+	<br>
+	電子郵件:<input type="text" name="mail">
+	<br>
+	展覽
+	<br>
+	<input type="radio" name="art" value="糖蜜酒精健身工坊">糖蜜酒精健身工坊
+	<br>
+	<img src="1-2a.jpg" width="600" height="450">
+	<br>
+	<input type="radio" name="art" value="未竟之役：太空．家屋．現代主義">未竟之役：太空．家屋．現代主義
+	<br>
+	<img src="1-2b.jpg" width="600" height="450">
+	<br>
+	<input type="radio" name="art" value="太空．家屋．現代主義 ">太空．家屋．現代主義
+	<br>
+	<img src="1-2c.jpg" width="600" height="450"> 
+	<br>
+	<input type="radio" name="art" value="王大閎建築劇場">王大閎建築劇場
+	<br>
+	<img src="1-2d.jpg" width="600" height="450">
+	<br>
+<input type=submit value="確定預約" >
+</div>
+
+<br> 
+<br> 
+    <div id="two">
+<h2>搜尋更多展覽資訊</h2>
+<form action="https://www.google.com/search" method="get">
+	<input type="text" name="q">
+	<input type="submit"value="搜尋" name="">
+</form>
+<br>
+
+<a href="https://www.google.com/search?q=糖蜜酒精健身工坊">搜尋糖蜜酒精健身工坊</a>
+<br>
+<a href="https://www.google.com/search?q=未竟之役：太空．家屋．現代主義">搜尋未竟之役：太空．家屋．現代主義</a>
+<br>
+<a href="https://www.google.com/search?q=太空．家屋．現代主義 ">搜尋太空．家屋．現代主義 </a>
+<br>
+<a href="https://www.google.com/search?q=王大閎建築劇場">搜尋王大閎建築劇場</a>
+</div>
+</body>
+</html>
+
